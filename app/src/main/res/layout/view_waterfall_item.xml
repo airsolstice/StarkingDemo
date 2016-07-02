@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/waterfall_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/starking_url"
+        android:gravity="left|center_vertical"
+        android:layout_margin="@dimen/waterfall_item_text_margin"
+        android:textColor="@color/colorStaringText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/favo_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99+"
+            android:textColor="@color/colorStaringText"
+            android:textSize="@dimen/waterfall_item_favo_text_size"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+        <ImageView
+            android:layout_width="@dimen/waterfall_item_favo_szie"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_favo"
+            android:layout_margin="@dimen/waterfall_horizontal_margin"
+            android:layout_toLeftOf="@+id/favo_txt"
+            android:layout_height="@dimen/waterfall_item_favo_szie" />
+    </RelativeLayout>
+
+</LinearLayout>

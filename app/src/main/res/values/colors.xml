@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="appBarMainBackground">#eee</color>
+    <color name="colorIconFavo">#eb4f38</color>
+    <color name="colorStaringText">#272636</color>
+    <color name="cloorSystemBar">#e65100</color>
+    <!--Staring Theme Color Default-->
+    <color name="colorPrimary">#e65100</color>
+    <color name="colorPrimaryDark">#ff5722</color>
+    <color name="colorAccent">#727272</color>
+    <color name="colorPrimaryLight">#ff3d00</color>
+    <!--Android Defult Theme Color-->
+    <color name="defaultColorPrimary">#3F51B5</color>
+    <color name="defaultColorPrimaryDark">#303F9F</color>
+    <color name="defaultColorAccent">#FF4081</color>
+</resources>

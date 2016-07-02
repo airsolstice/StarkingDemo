@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.inc.sk.widgets.WaterfallView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/waterfall_scroll_view"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/waterfall_body_margin"
+            android:weightSum="2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/column_first"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/waterfall_body_margin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/column_second"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/waterfall_body_margin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tail"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/progressbar"
+                android:background="@drawable/waterfall_tail_bg"
+                android:layout_marginTop="5dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/indicator"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/indicator_text_size"
+                android:textColor="@color/colorStaringText"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.inc.sk.widgets.WaterfallView>
