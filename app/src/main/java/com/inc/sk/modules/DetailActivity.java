@@ -3,7 +3,6 @@ package com.inc.sk.modules;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -22,11 +21,10 @@ import com.inc.sk.utils.BitmapUtil;
 
 public class DetailActivity extends AppCompatActivity {
 
+    public static final String FAVO_RESPONSE = "You Point a Great for Her";
     private Toolbar mToolbar = null;
-
     private int mId = 0;
 
-    public static final String FAVO_RESPONSE = "You Point a Great for Her";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
